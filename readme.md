@@ -6,12 +6,12 @@
 
 #### Description
 
--Installation local de Wordpress
--Création d'un thème simple
--Création d'un dépot git local
--Création d'un github
+- Installation local de Wordpress
+- Création d'un thème simple
+- Création d'un dépot git local
+- Création d'un github
 
 #### Références
 
--Links
--Links
+- https://eddytuto.ca/
+- https://www.php.net/docs.php
