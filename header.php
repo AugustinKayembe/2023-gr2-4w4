@@ -16,5 +16,5 @@
     ?>
 </body>
 <header>
-    <h1> 4W4 creation interface </h1>
+    <h1> 4W4 création d'interface </h1>
 </header>
