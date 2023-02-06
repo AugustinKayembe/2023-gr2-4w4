@@ -9,9 +9,12 @@
 
 <body>
    <header>
+   <section></section><?php the_custom_logo(); ?>
     <?php wp_nav_menu(array(
-        "menu" => "entete"
+        "menu" => "entete",
+        "container" => "nav"
     )) ?>
+</section>
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
