@@ -408,10 +408,13 @@ a:hover {
   justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item {
-  color: #050;
+  color: rgb(22, 29, 49);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
   top: 50rem;
   padding: 5px 20px;
+}
+.menu-entete-container .menu .menu-item a:visited {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
