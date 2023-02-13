@@ -12,15 +12,20 @@ Text Domain: 2023-4w4
 */
 
 @import "variables/dimension";
+
 @import "normalize/normalize";
 // @import "normalize/box-sizing";
+
+@import "variables/root";
 
 /* --------------------------------------------- base */
 @import "base/heading";
 // @import "base/espacement";
 @import "base/link";
+@import "base/_body";
 // @import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/pied_page";
 @import "composant/site_entete";
+@import "composant/bloc_flex";

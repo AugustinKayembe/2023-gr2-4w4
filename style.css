@@ -382,25 +382,52 @@ a:hover {
   color: rgb(211, 28, 28);
 }
 
+body {
+  background-color: orange;
+}
+
+.article_one {
+  background-color: rgb(222, 73, 23);
+}
+
+.titre_principal {
+  background-color: rgb(56, 4, 130);
+  text-align: center;
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #C1D1FD;
+  padding: 2%;
 }
 
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
+  padding: 2%;
+}
+
+.site__header {
+  background-color: #C1D1FD;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
+  background-color: #C1D1FD;
 }
 
+/******************************** menu-entete */
 .menu-entete-container .menu {
   display: flex;
   column-gap: 1rem;
@@ -417,4 +444,15 @@ a:hover {
 }
 .menu-entete-container .menu .menu-item a:visited {
   color: red;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 200px;
+  border: 1px solid #aaa;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
