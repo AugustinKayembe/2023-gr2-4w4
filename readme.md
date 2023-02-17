@@ -1,4 +1,4 @@
-# Exercice #1
+# Exercice #3
 
 ## 4w4 - Conception d'interface et développement web
 
@@ -6,12 +6,12 @@
 
 #### Description
 
-- Installation local de Wordpress
-- Création d'un thème simple
-- Création d'un dépot git local
-- Création d'un github
+- Améliorer la classe .blocflex
+- Création du modèle category.php
+- Améliorer l'affichage des articles « markdown »
 
 #### Références
 
 - https://eddytuto.ca/
 - https://www.php.net/docs.php
+- https://cidweb8.sg-host.com/
