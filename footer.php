@@ -2,7 +2,7 @@
      <section>Colonne 1</section>
      <section>Colonne 1</section>
      <section>Colonne 1</section>
-    <h3>Le pied de page</h3>
+    <h3 class="pied2page_titre"></h3>
 </footer>
 <?php
 wp_footer();

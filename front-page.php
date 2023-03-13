@@ -5,27 +5,23 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <h3>front-page.php</h3>
-<section class="blocflex">
-<?php
-    if (have_posts()): 
-        while (have_posts()) : the_post(); ?>
-
-        <article>
-        <h1>
-            <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
-        </h1>
-
-        <?php //the_content(); // affiche le contenu de l'article ?> 
-        <?php the_excerpt(); // affiche un résumé de l'article ?> 
-       <p> <?php if(is_category('cours')) echo "cours" ?>  </p>
-       <p> <?php wp_trim_words(get_the_excerpt(), 10, "<span>&#10148;</span>") ?></p>
-        </article>
-            <hr>
-        <?php endwhile;
-    endif;
-?>
+    <section class="blocflex">
+    <?php
+        if (have_posts()): 
+            while (have_posts()) : the_post(); 
+                if (in_category('galerie')){
+                 //get_template_part("template-parts/categorie", "galerie");
+                 the_content();
+                }
+                else {
+                    get_template_part("template-parts/categorie", "4w4");  
+                }
+             endwhile;
+        endif;    
+    ?>
+    </section>
 </main>
-</section>
+
 <?php get_footer(); ?>

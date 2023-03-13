@@ -1,24 +1,44 @@
-/* Les balises qu'on utlilise dans la conversation des fichiers markdown*/
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
 
-/*
+/* Liste */
+ul,ol{}
 
-ul, ol{}
-
-ul > li
+ul > li,
 ol > li{
 
 }
 
-ul > li{}
+ul {
+    list-style-type: none;
+}
 
-pre{}
+ul>li {
+}
 
-code{}
+ol>li{}
+
+li::before {
+    content: "»";
+    background: lightgray;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    margin-inline-end: 1rem;
+  }
+
+/* ----------------------------  pre */
+
+pre {}
+
+code {}
 
 i{}
 
-blockquote{}
+blockquote {}
+
+hr {}
+
+strong {}
 
 
-*/
+
 
