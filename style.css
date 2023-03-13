@@ -184,9 +184,7 @@ select { /* 1 */
 button,
 [type=button],
 [type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
+[type=submit]
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -268,7 +266,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
+ 
   outline-offset: -2px; /* 2 */
 }
 
@@ -321,6 +319,12 @@ template {
 }
 
 /* --------------------------------------------- base */
+/*
+css font-size clamp generator *
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
+
+*/
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -382,10 +386,21 @@ a:hover {
   color: rgb(211, 28, 28);
 }
 
-.titre_principal {
-  text-align: center;
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+/* Liste */
+ul {
+  list-style-type: none;
 }
 
+li::before {
+  content: "»";
+  background: lightgray;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  margin-inline-end: 1rem;
+}
+
+/* ----------------------------  pre */
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -398,23 +413,55 @@ a:hover {
   flex: 1 1 200px;
 }
 
+/* --------------------------------------------------- Entete de la page */
 .site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logomenu {
+.menu__recherche {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 /* -------------------------------------------------- menu-enetete */
+#chkMenu:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+.menu-entete-container {
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
+}
 .menu-entete-container .menu {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
+  align-items: flex-end;
   justify-content: flex-start;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 42, 85);
@@ -422,6 +469,30 @@ a:hover {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+  white-space: nowrap;
+}
+
+/* //////////////////////////////////////////// Zone de recherche */
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ------------------------------------------ Bouton burger */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkMenu {
+  display: none;
 }
 
 .blocflex {
@@ -457,9 +528,7 @@ a:hover {
 
 .blocflex__galerie {
   flex: 1 0 100%;
-}
-
-/* --------------------------------------------- layout */
+} /* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
 */
