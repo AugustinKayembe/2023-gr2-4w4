@@ -184,7 +184,9 @@ select { /* 1 */
 button,
 [type=button],
 [type=reset],
-[type=submit]
+[type=submit] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -266,7 +268,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
- 
+  -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -414,10 +416,22 @@ li::before {
 }
 
 /* --------------------------------------------------- Entete de la page */
+.site__header {
+  overflow: clip;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .site__header__logo {
+    align-items: center;
+  }
+}
+.site__header__logo img {
+  width: 4em;
+  height: 4em;
 }
 
 .menu__recherche {
@@ -434,6 +448,10 @@ li::before {
     justify-content: flex-end;
   }
 }
+.menu__recherche img {
+  width: 2em;
+  height: 2em;
+}
 
 /* -------------------------------------------------- menu-enetete */
 #chkMenu:checked ~ .menu-entete-container {
@@ -443,6 +461,7 @@ li::before {
 .menu-entete-container {
   transform: translateX(300px);
   transition: transform 0.5s;
+  overflow: clip;
 }
 @media screen and (min-width: 800px) {
   .menu-entete-container {
@@ -484,6 +503,7 @@ li::before {
   justify-content: center;
   align-items: center;
   width: 25px;
+  height: auto;
 }
 @media screen and (min-width: 800px) {
   .burger {
@@ -497,8 +517,10 @@ li::before {
 
 .blocflex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  border: thick double #32a1ce;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -513,12 +535,14 @@ li::before {
 */
 .blocflex__article {
   display: flex;
-  flex: 1 0 300px;
+  flex: 1 0 400px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 1px solid #aaa;
+  margin: auto 2em;
+  padding: auto 2em;
+  border: thick double #32a1ce;
   padding: 1rem;
 }
 .blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
@@ -528,7 +552,9 @@ li::before {
 
 .blocflex__galerie {
   flex: 1 0 100%;
-} /* --------------------------------------------- layout */
+}
+
+/* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
 */

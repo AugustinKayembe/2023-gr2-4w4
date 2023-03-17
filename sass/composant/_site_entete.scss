@@ -1,12 +1,34 @@
 /* --------------------------------------------------- Entete de la page */
 
-//.site__header {}
+.site__header {
+  overflow: clip;
+}
 
 .site__header__logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    @media screen and (min-width: $largeur__bureau) {
+        align-items: center;
+    }
+
+    img{
+        width:4em;
+        height:4em;
+        // padding-bottom:5em;
+    }
+
+    // a {
+    // width: 5em;
+    // height: 50%;
+    // } 
+    //   img{
+    //     width:2em;
+    //     height:2em;
+    //     // padding-bottom:5em;
+    // }
 }
+
+
 
 
 .menu__recherche {
@@ -21,6 +43,11 @@
         justify-content: flex-end;
 
     }
+
+    img{
+        width:2em;
+        height:2em;
+    }
 }
 
 /* -------------------------------------------------- menu-enetete */
@@ -31,6 +58,7 @@
 .menu-entete-container { // nav
     transform : translateX(300px);
     transition : transform .5s;
+    overflow: clip;
     @media screen and (min-width:$largeur__tablette) {
         transform : translateX(0);
     }
