@@ -18,11 +18,11 @@ ul>li {
 ol>li{}
 
 li::before {
-    content: "»";
     background: lightgray;
     border-radius: 1rem;
     padding-inline: 1rem;
     margin-inline-end: 1rem;
+
   }
 
 /* ----------------------------  pre */

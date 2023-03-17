@@ -20,6 +20,12 @@
 .site__aside {
   grid-area: aside;
   background-color: rgb(103, 236, 178);
+  font-size: 20px;
+  text-decoration: none;
+  
+    nav a{
+    text-decoration: none;
+}
 }
 
 .site {

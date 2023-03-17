@@ -395,7 +395,6 @@ ul {
 }
 
 li::before {
-  content: "»";
   background: lightgray;
   border-radius: 1rem;
   padding-inline: 1rem;
@@ -428,10 +427,10 @@ li::before {
   .site__header__logo {
     align-items: center;
   }
-}
-.site__header__logo img {
-  width: 4em;
-  height: 4em;
+  .site__header__logo img {
+    width: 4em;
+    height: 4em;
+  }
 }
 
 .menu__recherche {
@@ -489,6 +488,8 @@ li::before {
   display: block;
   padding: 5px 20px;
   white-space: nowrap;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 /* //////////////////////////////////////////// Zone de recherche */
@@ -577,6 +578,11 @@ li::before {
 .site__aside {
   grid-area: aside;
   background-color: rgb(103, 236, 178);
+  font-size: 20px;
+  text-decoration: none;
+}
+.site__aside nav a {
+  text-decoration: none;
 }
 
 .site {

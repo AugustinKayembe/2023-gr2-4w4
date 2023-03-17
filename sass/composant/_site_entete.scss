@@ -9,12 +9,12 @@
     justify-content: space-between;
     @media screen and (min-width: $largeur__bureau) {
         align-items: center;
-    }
 
-    img{
-        width:4em;
-        height:4em;
-        // padding-bottom:5em;
+        img{
+            width:4em;
+            height:4em;
+            // padding-bottom:5em;
+        }
     }
 
     // a {
@@ -69,6 +69,7 @@
         list-style-type: none;
         align-items: flex-end;
         justify-content: flex-start;
+        
         @media screen and (min-width : $largeur__tablette ){
            flex-direction: row; 
            align-items: center;
@@ -81,6 +82,8 @@
             display : block;
             padding : 5px 20px;
             white-space: nowrap;
+            text-decoration: none;
+            font-size: 20px;
             }
         }
     }
