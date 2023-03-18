@@ -2,6 +2,8 @@
 
 .site__header {
   overflow: clip;
+  overflow-x: hidden;
+
 }
 
 .site__header__logo {
@@ -17,10 +19,19 @@
         }
     }
 
+    @media screen and (min-width: $largeur__mobile) {
+        grid-area: header;
+        /* padding: 1rem clamp(1rem, 3vw, 20rem); */
+        background-color: antiquewhite;
+    
+        img{
+            width:4em;
+            height:4em;
+            // padding-bottom:5em;
+        }
+    }
+
 }
-
-
-
 
 .menu__recherche {
     display: flex;
