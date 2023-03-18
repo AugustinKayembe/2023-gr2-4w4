@@ -4,7 +4,6 @@
   justify-content:center;
   flex-wrap: wrap;
   border: thick double #32a1ce;
-  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
 /*
@@ -38,4 +37,5 @@ h3,h5,h6,p {
 
 .blocflex__galerie {
  flex: 1 0 100%;
+ box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }

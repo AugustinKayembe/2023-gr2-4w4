@@ -408,10 +408,23 @@ li::before {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.site__footer img {
+  width: 5em;
+  height: 5em;
+}
 
 .site__footer section {
   border: 1px solid #aaa;
-  flex: 1 1 200px;
+  flex: 1 1 100px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* --------------------------------------------------- Entete de la page */
@@ -521,7 +534,6 @@ li::before {
   justify-content: center;
   flex-wrap: wrap;
   border: thick double #32a1ce;
-  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -553,6 +565,7 @@ li::before {
 
 .blocflex__galerie {
   flex: 1 0 100%;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* --------------------------------------------- layout */
