@@ -9,7 +9,7 @@
 
 <main>
     <h3>search.php</h3>
-    <h3>Résultats de la recherche</h3>
+    <h2>Résultats de la recherche</h2>
     <section class="article_solo">
     <?php if (have_posts()) :
         while (have_posts()) : the_post();
@@ -18,7 +18,6 @@
             <?php wp_trim_words(get_the_excerpt(), 50, "[...]"); ?>
             <hr>
     <?php
-    
         endwhile;
     endif;
     ?>
