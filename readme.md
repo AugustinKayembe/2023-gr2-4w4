@@ -6,9 +6,11 @@
 
 #### Description
 
-- Améliorer la classe .blocflex
-- Création du modèle category.php
-- Améliorer l'affichage des articles « markdown »
+-	Titre : Adapter le modèle search.php pour reproduire la maquette incluse avec le devis
+-	Auteur : Augustin Kayembe
+-	Courte description: Adapter le modèle search.php
+-	Lien vers votre site siteground : 
+
 
 #### Références
 
