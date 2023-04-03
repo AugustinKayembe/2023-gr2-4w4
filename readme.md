@@ -1,4 +1,4 @@
-# Exercice #3
+# tp1#3
 
 ## 4w4 - Conception d'interface et développement web
 
@@ -6,9 +6,9 @@
 
 #### Description
 
-- Améliorer la classe .blocflex
-- Création du modèle category.php
-- Améliorer l'affichage des articles « markdown »
+- Enlever aside 
+- Ajout de template parts
+- Améliorer l'affichage des articles
 
 #### Références
 
