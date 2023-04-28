@@ -1,0 +1,11 @@
+.menu-evenement-container{
+    .menu {
+     display: flex;
+       .menu-item {
+        border: red solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       }
+   }
+}

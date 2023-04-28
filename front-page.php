@@ -7,6 +7,16 @@
 <?php get_header(); ?>
 <main class="site__main">
     <h3></h3>
+
+    <section class="blocflex">
+
+    <?php wp_nav_menu(array(
+        "menu" => "evenement",
+        "container" => "nav"
+      ));
+    ?>
+
+    </section>
     <section class="blocflex">
     <?php
         if (have_posts()): 

@@ -548,6 +548,8 @@ li::before {
   justify-content: center;
   flex-wrap: wrap;
   border: thick double #32a1ce;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 100vh;
 }
 
 /*
@@ -580,6 +582,16 @@ li::before {
 .blocflex__galerie {
   flex: 1 0 100%;
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.menu-evenement-container .menu {
+  display: flex;
+}
+.menu-evenement-container .menu .menu-item {
+  border: red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* --------------------------------------------- layout */
