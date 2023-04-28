@@ -403,30 +403,44 @@ li::before {
 
 /* ----------------------------  pre */
 /* --------------------------------------------- composant */
-.site__footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.site-footer {
+  background-color: #f5f5f5;
+  color: #777;
+  font-size: 14px;
+  padding: 50px 0;
+  text-align: center;
 }
-@media screen and (min-width: 1000px) {
-  .site__footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+
+.site-footer a {
+  color: #777;
+}
+
+.site-footer a:hover {
+  color: #333;
+}
+
+.site-footer .widget {
+  margin-bottom: 30px;
+}
+
+.site-footer .menu-recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer form {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer {
+    padding: 30px 0;
+  }
+  .site-footer .widget {
+    margin-bottom: 20px;
   }
 }
-.site__footer img {
-  width: 5em;
-  height: 5em;
-}
-
-.site__footer section {
-  border: 1px solid #aaa;
-  flex: 1 1 100px;
-  font-size: 20px;
-  text-decoration: none;
-}
-
 /* --------------------------------------------------- Entete de la page */
 .site__header {
   overflow: clip;
