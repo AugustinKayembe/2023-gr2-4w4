@@ -394,13 +394,6 @@ ul {
   list-style-type: none;
 }
 
-li::before {
-  background: lightgray;
-  border-radius: 1rem;
-  padding-inline: 1rem;
-  margin-inline-end: 1rem;
-}
-
 /* ----------------------------  pre */
 main ul {
   font-size: 1.2rem;
