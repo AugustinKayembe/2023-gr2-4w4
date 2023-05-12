@@ -9,6 +9,11 @@
 .site__header__logo {
     display: flex;
     justify-content: space-between;
+    img{
+        width:4em;
+        height:4em;
+        // padding-bottom:5em;
+    }
     @media screen and (min-width: $largeur__bureau) {
         align-items: center;
 
@@ -24,11 +29,11 @@
         /* padding: 1rem clamp(1rem, 3vw, 20rem); */
         background-color: antiquewhite;
     
-        img{
-            width:4em;
-            height:4em;
-            // padding-bottom:5em;
-        }
+        // img{
+        //     width:4em;
+        //     height:4em;
+        //     // padding-bottom:5em;
+        // }
     }
 
 }
