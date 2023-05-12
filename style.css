@@ -409,6 +409,7 @@ li::before {
   font-size: 14px;
   padding: 50px 0;
   text-align: center;
+  z-index: -1;
 }
 
 .site-footer a {
