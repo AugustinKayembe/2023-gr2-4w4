@@ -696,9 +696,18 @@ main ul {
   background-color: rgb(103, 236, 178);
   font-size: 20px;
   text-decoration: none;
+  padding: 1rem;
 }
 .site__aside nav a {
+  display: block;
+  margin-bottom: 1rem;
+  color: white;
   text-decoration: none;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside {
+    padding: 2rem;
+  }
 }
 
 .site {
