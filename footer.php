@@ -30,7 +30,7 @@
           <h3>Liens importants</h3>
           <ul>
             <li><a href="https://github.com/AugustinKayembe">Accédez à mon Github</a></li>
-            <li><a href="https://github.com/AugustinKayembe">Accédez à mon Github</a></li>
+            <li><a href="https://www.linkedin.com/in/augustin-kayembe-6a078115a/">Accédez à mon compte Linkedin</a></li>
           </ul>
         </div>
       </div>
