@@ -656,6 +656,21 @@ main ul {
   height: 150px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-evenement-container nav.menu .menu-item {
+    flex: 0 0 calc(33.3333% - 20px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-evenement-container nav.menu .menu-item {
+    flex: 0 0 calc(25% - 20px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-evenement-container nav.menu .menu-item {
+    flex: 0 0 calc(20% - 20px);
+  }
+}
 /* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
