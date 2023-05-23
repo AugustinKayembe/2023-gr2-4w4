@@ -16,6 +16,12 @@
       ));
     ?>
 
+<?php wp_nav_menu(array(
+        "menu" => "Atelier",
+        "container" => "nav"
+      ));
+    ?>
+
     </section>
     <section class="blocflex">
     <?php
