@@ -15,7 +15,16 @@
 */
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
-<body class="site <?php echo (is_front_page()?'no-aside':'');?>">
+<?php $nouvelle_classe = "";
+  if  (is_front_page() || 
+      (! in_category("cours") && ! in_category("4w4")) ){
+        $nouvelle_classe = 'no-aside';
+      }
+  if (is_page_template('template-atelier.php')) {
+       $nouvelle_classe = '';
+  }  ?>
+
+<body class="site <?php echo $nouvelle_classe?>">
 
    <header class="site__header">
     <section class="site__header__logo">
