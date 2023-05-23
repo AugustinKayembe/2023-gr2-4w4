@@ -11,7 +11,7 @@ get_header();
             <?php the_post_thumbnail('thumbnail'); ?>
             <h1><?php echo get_the_title(); ?></h1>
             <?php the_content(); ?>
-            <p>Formateur : <?php the_field('formateur_'); ?></p>
+            <p>Formateur : <?php the_field('foramateur_'); ?></p>
             <p>Date de début : <?php the_field('date_de_latelier_'); ?></p>
             <p>Heure de début : <?php the_field('heure_de_la_formation_'); ?></p>
             <p>Durée : <?php the_field('duree_'); ?></p>
